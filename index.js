@@ -1,11 +1,29 @@
+// Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+
+//GIVEN a command-line application that accepts user input
+// WHEN I am prompted for information about my application repository
+// THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+// WHEN I enter my project title
+// THEN this is displayed as the title of the README
+// WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
+// THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+// WHEN I choose a license for my application from a list of options
+// THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+// WHEN I enter my GitHub username
+// THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+// WHEN I enter my email address
+// THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
+// WHEN I click on the links in the Table of Contents
+// THEN I am taken to the corresponding section of the README
+
+
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { clear } = require('console');
+// const generateMarkdown = require('generateMarkdown');
 
-//Make a string template literal
-const generateREADME = ({ title, description, technologies, installation, usage, credits, year, fullname}) =>
-    `# ${title}
+const generateREADME = ({ project_title, description, technologies, installation, usage, credits, year, fullname}) =>
+    `# ${project_title}
 
 ## Description
 ${description}
@@ -23,6 +41,7 @@ ${usage}
 ${credits}
 
 ## License
+
 MIT License
 
 Copyright (c) [${year}] [${fullname}]
@@ -43,16 +62,24 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.`;
+SOFTWARE.
 
-// TODO: Create an array of questions for user input
+## Badges
+/github/license/:user/:repo`;
+
 inquirer 
     .prompt([
     {
         type: 'input',
-        name: 'title',
+        name: 'project_title',
         message: 'What is the project title?',
     },
+    //What was your motivation?
+    //Why did you build this project?
+    //What problem does it solve?
+    //what did you learn?
+    //what makes your project stand out?
+    //This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions
     {
         type: 'input',
         name: 'description',
@@ -89,12 +116,7 @@ inquirer
         message: 'What is your fullname?',
     },
 
-    //What was your motivation?
-    //Why did you build this project?
-    //What problem does it solve?
-    //what did you learn?
-    //what makes your project stand out?
-
+    
 ])
     .then((answers) => {
         const READcontent = generateREADME(answers);
@@ -103,4 +125,5 @@ inquirer
             err ? console.log(err) : console.log('Successfully created README.md!')
         );
 });
+
 
