@@ -51,9 +51,11 @@ ${data.usage}
 ## Credits
 ${data.credits}
 
+${renderLicenseSection(data.license)}
+
 ${renderLicenseLink(data.license)}
 
-${renderLicenseSection(data.license)}
+
 `;
 }
 
