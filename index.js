@@ -51,7 +51,7 @@ function app() {
 
 inquirer 
     .prompt(generateREADME)
-    .then((data) => writeToFile('README_sample.md', generateMarkdown(data))) 
+    .then((data) => writeToFile('README.md', generateMarkdown(data))) 
     .then (() => console.log('Successfully created README.md!'))
     .catch((err) => console.log(err));
     
