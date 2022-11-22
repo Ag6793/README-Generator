@@ -15,12 +15,9 @@ function renderLicenseSection(license) {
   return ''
 }
 
-//For some reason the license stopped working
 //A function that returns the license link and if there is no license selected it will return an empty string
 function renderLicenseLink(license) {
-  if (license !== 'None') {
-    return `\n* [license](#license)\n`}
-    else if (license === 'MIT') {
+  if (license === 'MIT') {
       return `\n* [license](https://choosealicense.com/licenses/mit/)\n`
     } else if (license === 'APACHE2.0') {
       return `\n* [license](https://choosealicense.com/licenses/apache-2.0/)\n`

@@ -4,23 +4,23 @@
 ![GitHub license](https://img.shields.io/badge/license-APACHE2.0-red.svg)
 
 ## Description
-This is the sample for the project.
+This is a sample README.
 
 ## Technologies
-Javascript and Node.js
+Javascript and Node.
 
 ## Installation
-Run Node in the terminal.
+Run Node in terminal.
 
 ## Usage
-Use application to create a README.
+Use to create a README quickly and efficiently.
 
 ## Credits
 https://github.com/Ag6793
 
 ## License
 
-* [license](#license)
+* [license](https://choosealicense.com/licenses/apache-2.0/)
 
 
 
