@@ -1,25 +1,24 @@
 
-# Sample README
+# Project Sample
 
-![GitHub license](https://img.shields.io/badge/license-MIT-red.svg)
+![GitHub license](https://img.shields.io/badge/license-APACHE2.0-red.svg)
 
 ## Description
-This a sample README to test the generator.
+This is the sample for the project.
 
 ## Technologies
-Javascript & Node.js
+Javascript and Node.js
 
 ## Installation
-Run node
+Run Node in the terminal.
 
 ## Usage
-You can use this application to build a README. It will speed up the README making process.
+Use application to create a README.
 
 ## Credits
-Me
+https://github.com/Ag6793
 
 ## License
-
 
 * [license](#license)
 

@@ -18,7 +18,7 @@ const generateREADME = [
         type: 'list',
         name: 'license',
         message: 'What type of license do you want?',
-        choices: ['MIT','APACHE 2.0', 'BSD 2', 'None']
+        choices: ['MIT','APACHE2.0', 'BSD2', 'None']
     },
     {
         type: 'input',
@@ -51,7 +51,7 @@ function app() {
 
 inquirer 
     .prompt(generateREADME)
-    .then((data) => writeToFile('README.md', generateMarkdown(data))) 
+    .then((data) => writeToFile('README_sample.md', generateMarkdown(data))) 
     .then (() => console.log('Successfully created README.md!'))
     .catch((err) => console.log(err));
     
