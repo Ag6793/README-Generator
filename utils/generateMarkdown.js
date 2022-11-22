@@ -1,9 +1,4 @@
-// github license badge : 	/github/license/:user/:repo
-//npm license: /npm/l/:packageName
-// badge from readme guide : ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//A function that returns a license badge based on which license is passed in or if no license selected it will return an empty string
 function renderLicenseBadge(license) {
     if (license !== 'None') {
       return `![GitHub license](https://img.shields.io/badge/license-${license}-red.svg)`
@@ -11,8 +6,7 @@ function renderLicenseBadge(license) {
     return ''
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+//A function that returns the license link and if there is no license selected it will return an empty string
 function renderLicenseLink(license) {
   if (license !== 'None') {
     return `\n* [license](#license)\n`}
@@ -27,9 +21,7 @@ function renderLicenseLink(license) {
     return ''
 }
   
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+//A function that returns the license section of README and if there is no license it will return an empty string
 function renderLicenseSection(license) {
   if (license !== 'None') {
     return `## License`
@@ -37,7 +29,7 @@ function renderLicenseSection(license) {
   return ''
 }
 
-// TODO: Create a function to generate markdown for README
+// A function to generate markdown for README
 function generateMarkdown(data) {
   return `
 # ${data.title}
@@ -66,3 +58,15 @@ ${renderLicenseSection(data.license)}
 }
 
 module.exports = generateMarkdown;
+
+
+// ## Badges
+
+// ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+// [![macOS](https://svgshare.com/i/ZjP.svg)](https://svgshare.com/i/ZjP.svg)
+// [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://bitbucket.org/lbesson/ansi-colors)
+// [![GitHub license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+
+// ## How to Contribute
+
+// [Contributor Covenant](https://www.contributor-covenant.org/)
