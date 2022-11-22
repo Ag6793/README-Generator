@@ -6,6 +6,8 @@
 ## Description
 This application will accept user input and create a README.
 
+![Screenshot_of_readme_generator](https://user-images.githubusercontent.com/107378358/203195329-5d98e66c-c626-4e01-88bd-3b0289d7daea.jpg)
+
 ## Technologies
 Javascript and Node.js
 
