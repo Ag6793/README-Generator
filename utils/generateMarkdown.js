@@ -6,6 +6,15 @@ function renderLicenseBadge(license) {
     return ''
 }
 
+  
+//A function that returns the license section of README and if there is no license it will return an empty string
+function renderLicenseSection(license) {
+  if (license !== 'None') {
+    return `## License`
+  }
+  return ''
+}
+
 //A function that returns the license link and if there is no license selected it will return an empty string
 function renderLicenseLink(license) {
   if (license !== 'None') {
@@ -19,14 +28,6 @@ function renderLicenseLink(license) {
     }
 
     return ''
-}
-  
-//A function that returns the license section of README and if there is no license it will return an empty string
-function renderLicenseSection(license) {
-  if (license !== 'None') {
-    return `## License`
-  }
-  return ''
 }
 
 // A function to generate markdown for README

@@ -6,11 +6,13 @@
 ## Description
 This application will accept user input and create a README.
 
+![Screenshot_of_readme_generator](./assets/Images/Screenshot_of_readme_generator.jpg)
+
 ## Technologies
 Javascript and Node.js
 
 ## Installation
-Run Node in the terminal.
+Run Node in the terminal
 
 ## Usage
 To allow the user to spend more time on their project, this application will allow the user to create a README quickly and efficiently.
@@ -19,6 +21,7 @@ To allow the user to spend more time on their project, this application will all
 https://github.com/Ag6793
 
 ## License
+
 * [license](#license)
 
 
