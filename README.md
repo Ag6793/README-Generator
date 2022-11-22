@@ -6,8 +6,6 @@
 ## Description
 This application will accept user input and create a README.
 
-![Screenshot_of_readme_generator](./assets/Images/Screenshot_of_readme_generator.jpg)
-
 ## Technologies
 Javascript and Node.js
 
